@@ -1,0 +1,140 @@
+.main-div, .webcam-div {
+    width: 45vh;
+    min-width: 300px;
+    padding-top: 80vh;
+}
+
+.main-div {
+    position: relative;
+}
+
+.main-div * {
+    position: absolute;
+}
+
+.webcam-div {
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.webcam-video {
+    top: 0;
+    left: 0;
+}
+
+.face-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid blue;
+    z-index: 3;
+    pointer-events: none;
+    background: transparent;
+}
+
+.check-photo-img {
+    top: 0;
+    left: 0;
+}
+
+.typography {
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+button {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    background: no-repeat center;
+    background-size: 70%;
+    height: 50px;
+    border: none;
+}
+
+.fileInput {
+    display: none;
+    position: absolute;
+}
+
+.main-button {
+    left: 50%;
+    transform: translate(-50%);
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.secondary-button {
+    background-color: deeppink;
+    width: 50px;
+    left: 5%;
+}
+
+.next-button {
+    background-color: white;
+    width: 50px;
+    right: 5%;
+}
+
+.back-button {
+    background-image: url("../icons/return.png");
+}
+
+.photo-button {
+    background-image: url("../icons/photo.png");
+}
+
+.next-button {
+    background-image: url("../icons/next.png");
+}
+
+.oval-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.oval {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: 60%;
+    width: 70%;
+    box-shadow: 0 0 9999px 99999px rgba(0, 0, 0, 0.7);
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40%;
+}
+
+.vl {
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    left: 50%;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hl {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    left: 5%;
+    top: 37%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
