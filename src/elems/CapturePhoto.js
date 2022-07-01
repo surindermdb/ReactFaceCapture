@@ -36,7 +36,7 @@ export default class CapturePhoto extends React.Component {
 
         const minScale = Math.max(rectWidth / videoCnstrts.width, rectHeight / videoCnstrts.height);
         const requiredScale = rectWidth / box.width;
-        const scale = Math.max(minScale, requiredScale);
+        const scale = 0.12; // Math.max(minScale, requiredScale);
 
         const relX = box.x - videoMidX;
         const relY = box.y - videoMidY;
@@ -53,8 +53,8 @@ export default class CapturePhoto extends React.Component {
         const minLeft = -(videoCnstrts.width + dx - rectWidth);
         const maxLeft = dx;
 
-        const left = Math.min(Math.max(leftVal, minLeft), maxLeft);
-        const top = Math.min(Math.max(topVal, minTop), maxTop);
+        const left = 50; // Math.min(Math.max(leftVal, minLeft), maxLeft);
+        const top = 60 ; //Math.min(Math.max(topVal, minTop), maxTop);
 
         console.log(scale + " " + left + " " + top);
         console.log("faceBoxWidth = " + box.width);
